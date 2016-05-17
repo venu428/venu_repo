@@ -4,7 +4,7 @@
   <property name="build" value="build"/>
   <property name="lib"   value="lib"/>
 
-<target name="all" depends="clean, compile" description="Builds the whole project">
+<target name="/var/lib/jenkins/workspace/my" depends="clean, compile" description="Builds the whole project">
     <echo>Doing all</echo>
   </target>
 
