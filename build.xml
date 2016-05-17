@@ -8,12 +8,6 @@
     <echo>Doing all</echo>
   </target>
 
-<target name="Clean" description="Removes previous build">
-    <delete verbose="true">
-      <fileset dir="${build}"/>
-    </delete>
-  </target>
-
 <target name="compile" depends="clean" description="compile whole project">
     <echo>compile ${ant.project.name} </echo>
     <copy file="${src}/splashscreen.jpeg" tofile="${build}/splashscreen.jpeg"/>
