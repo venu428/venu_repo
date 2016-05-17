@@ -4,11 +4,11 @@
   <property name="build" value="build"/>
   <property name="lib"   value="lib"/>
 
-<target name="/var/lib/jenkins/workspace/my" depends="clean, compile" description="Builds the whole project">
+<target name="/var/lib/jenkins/workspace/my" depends="compile" description="Builds the whole project">
     <echo>Doing all</echo>
   </target>
 
-<target name="compile" depends="clean" description="compile whole project">
+<target name="compile" description="compile whole project">
     <echo>compile ${ant.project.name} </echo>
     <copy file="${src}/splashscreen.jpeg" tofile="${build}/splashscreen.jpeg"/>
     <javac srcdir="${src}" destdir="${build}" includes="Test.java"/>
